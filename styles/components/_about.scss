@@ -1,0 +1,79 @@
+@import '../common/vars';
+
+.about {
+    padding: 80px 0;
+    background-image: url(../images/test_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include b(tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid $aquamarine-color;
+
+        &-box {
+            width: 220px;
+            height: 220px;
+            border: 10px solid $platinum-color;
+            border-radius: 50%;
+            position: relative;
+            margin-bottom: 30px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                left: -16px;
+                right: 34px;
+                background-color: $aquamarine-color;
+                border: 6px solid $platinum-color;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__body {
+        width: 70%;
+
+        @include b(tablet) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__caption {
+        font-size: 40px;
+        line-height: 57px;
+        color: $white-color;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $white-color;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        color: $white-color;
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+}

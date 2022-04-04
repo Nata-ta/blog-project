@@ -1,0 +1,31 @@
+@import './vars';
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    font-family: $main-ff;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgba($main-color, .5);
+    background-color: rgba($white-color, .05);
+    color: $secondary-color;
+    border-radius: 8px;
+    height: 48px;
+    padding: 0 13px;
+    transition: $trs;
+
+    &::placeholder {
+        color: rgba($secondary-color, .6);
+    }
+
+    &:focus {
+        border-color: $main-color;
+    }
+}
+
+textarea {
+    height: 122px;
+    resize: none;
+    padding: 8px 13px;
+}

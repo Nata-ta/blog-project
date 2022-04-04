@@ -1,0 +1,73 @@
+@import '../common/vars';
+
+.fa {
+    font-family: FontAwesome;
+    font-size: 25px;
+    font-weight: 400;
+
+    &-brands {
+        position: absolute;
+        left: 16px;
+        top: 12px;
+    }
+
+}
+
+.footer {
+    padding: 80px 0;
+    background-color: $bangladesh-green-color;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include b(tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__info {
+        width: 50%;
+        margin-bottom: 30px;
+
+        @include b(tablet) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__caption {
+        color: $white-color;
+        font-size: 40px;
+        line-height: 57px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 28px;
+        color: $white-color;
+    }
+
+    &__contacts {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        border-radius: 50%;
+        box-shadow: $platinum-color 0px 0px 10px 0px;
+        color: $white-color;
+
+        &:hover {
+            box-shadow: $platinum-color 0px 0px 20px 0px;
+        }
+    }
+}

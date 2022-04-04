@@ -1,0 +1,61 @@
+$main-fz: 16px;
+$main-fw: 400;
+$main-lh: 1.4;
+$main-ff: 'Montserrat',
+Arial,
+Helvetica,
+sans-serif;
+
+$main-color: #666666;
+$secondary-color: #333334;
+$primary-color: #3e3e3e;
+$white-color: #fff;
+$black-color: #000;
+$btn-color: #02fee5;
+$aquamarine-color: #6ad0bc;
+$platinum-color: #e6e1e1;
+$bangladesh-green-color: #046c58;
+$button-bg: #5c67ff;
+$list-bg: #fff;
+$text-color: #1c3991;
+$text-color-hover: #5c67ff;
+
+$menu-icon-transition: transform 300ms cubic-bezier(0.52, -0.80, 0.52, 0.52);
+$trs: all .3s;
+
+$mobile-low: 479px;
+$mobile-width: 767px;
+$tablet-width: 1024px;
+$desktop-width: 1366px;
+
+@mixin b($breakpoints) {
+    @if ($breakpoints==desktop) {
+        @media (max-width: #{$desktop-width}) {
+            @content
+        }
+    }
+
+    @if ($breakpoints==tablet) {
+        @media (max-width: #{$tablet-width}) {
+            @content
+        }
+    }
+
+    @else if ($breakpoints==mobile) {
+        @media (max-width: #{$mobile-width}) {
+            @content
+        }
+    }
+
+    @else if ($breakpoints==mobile-sm) {
+        @media (max-width: #{$mobile-low}) {
+            @content
+        }
+    }
+
+    @else {
+        @media (max-width: $breakpoints + px) {
+            @content
+        }
+    }
+}

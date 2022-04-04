@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/ed16fee5e9.js" crossorigin="anonymous"></script>
+    <title>Course project</title>
+</head>
+<body>
+
+<header class="hero">
+    <div class="container">
+        <div class="hero__header">
+            <div class="hero__header-wrap">
+                <a href="#" class="hero__logo">
+                    <img src="./images/logo.png" alt="" class="hero__logo-img">
+                </a>
+                <nav class="hero__nav">
+                    <ul class="hero__menu">
+                        <li class="hero__menu-item">
+                            <a href="#postsHome" class="hero__menu-link">HOME</a>
+                        </li>
+                        <li class="hero__menu-item">
+                            <a href="#aboutId" class="hero__menu-link">ABOUT</a>
+                        </li>
+                        <li class="hero__menu-item">
+                            <a href="#contactUs" class="hero__menu-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="list-container">
+                    <button class="more-button" aria-label="Menu Button">
+                      <div class="menu-icon-wrapper">
+                        <div class="menu-icon-line half first"></div>
+                        <div class="menu-icon-line"></div>
+                        <div class="menu-icon-line half last"></div>
+                      </div>
+                    </button>
+                    <ul class="more-button-list">
+                      <li class="more-button-list-item">
+                        <span><a href="#postsHome">Home</a></span>
+                      </li>
+                      <li class="more-button-list-item">
+                        <span><a href="#aboutId">About</a></span>
+                      </li>
+                      <li class="more-button-list-item">
+                        <span><a href="#contactUs">Contact</a></span>
+                      </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero__wrap" >
+            <h1 class="caption hero__caption">Our Blog</h1>
+            <p class="hero__text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+        </div>
+    </div>
+</header>
+
+<main>
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top">
+        <i class="fa fad fa-arrow-circle-up"></i>
+    </button>
+    <section class="posts" id="postsHome">
+        <div class="posts__body">
+            <h2 class="caption posts__caption">News</h2>
+        </div>
+        <aside class="posts__creator">
+            <form class="allNews">
+                <div class="posts__form">
+                    <h2 class="caption posts__caption">Create new post</h2>
+                    <div class="posts__userForm">
+                        <label for="formAuthor" class="posts__form-label">Author</label>
+                        <input type="text" class="posts__form-control" id="formAuthor" name="author">
+                    </div>
+                    <div class="posts__textForm">
+                        <label for="formText" class="form-label">Post text</label>
+                        <textarea class="posts__info-text" id="formText" rows="3" name="text"></textarea>
+                    </div>
+                    <div class="field__wrapper posts__field">
+                        <label class="field__file-wrapper" for="field__file-2">Image URL</label>
+                        <input name="image" type="text" id="field__file-2" class="post__field">
+                     </div>
+                    <button class="btn btn-submit posts__btn _loadPostsBtn" type="submit">Creat post</button>
+                </div>
+            </form>
+        </aside>
+    </section>
+
+    <section id="aboutId" class="about">
+        <div class="container">
+            <div class="about__wrap">
+                <div class="about__img-box">
+                    <img src="./images/our_img1.jpg" alt="photo" class="about__img">
+                </div>
+                <div class="about__body">
+                    <h2 class="caption about__caption">Testimonial</h2>
+                    <h3 class="title about__title">WILL SMITHE</h3>
+                    <p class="about__text">Tof Lorem Ipsum, you need to be There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a pass age of Lorem Ipsum, you need to be</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer" id="contactUs">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__info">
+                <h2 class="caption footer__caption">Contact us</h2>
+                <p class="footer__text">There are many variations of passages of Lorem Ipsum available, but the</p>
+            </div>
+            <div class="footer__contacts">
+                <div class="footer__coll">
+                    <a href="https://www.facebook.com/" class="footer__link">
+                        <i class="fa fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="footer__coll">
+                    <a href="https://twitter.com/" class="footer__link">
+                        <i class="fa fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="footer__coll">
+                    <a href="https://ua.linkedin.com/" class="footer__link">
+                        <i class="fa fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

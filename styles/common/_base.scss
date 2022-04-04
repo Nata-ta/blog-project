@@ -1,0 +1,89 @@
+@import './vars';
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+        url("../fonts/Montserrat-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+        url("../fonts/Montserrat-SemiBold.woff") format("woff");
+    font-style: normal;
+    font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-ff;
+    font-size: $main-fz;
+    line-height: $main-lh;
+    font-weight: $main-fw;
+    color: $main-color;
+    margin: 0;
+    min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    transition: $trs;
+}
+
+.container {
+    max-width: 1248px;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.caption {
+    font-size: 46px;
+    line-height: 1.3;
+    font-weight: 600;
+    letter-spacing: .02em;
+
+    @include b(tablet) {
+        font-size: 40px;
+    }
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.3;
+}
